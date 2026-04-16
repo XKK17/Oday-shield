@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>درع المزهري - فحص الروابط</title>
+    <style>
+        body { background: #000; color: #fff; font-family: monospace; padding: 20px; }
+        .terminal { border: 1px solid #008080; padding: 20px; max-width: 700px; margin: auto; box-shadow: 0 0 15px #008080; }
+        input { background: #000; border: 1px solid #008080; color: #0f0; padding: 10px; width: 70%; outline: none; }
+        button { background: #008080; color: white; border: none; padding: 10px 20px; cursor: pointer; font-weight: bold; }
+        pre { white-space: pre-wrap; color: #0f0; background: #050505; padding: 10px; border-left: 3px solid #008080; font-size: 14px; }
+    </style>
+</head>
+<body>
+    <div class="terminal">
+        <h2 style="color: #ffd700; text-align: center;">القيادة ابوخالد المزهري عدي</h2>
+        <form method="POST">
+            <span style="color:#00ffff;">$ أدخل الرابط:</span>
+            <input type="text" name="url" placeholder="https://..." required>
+            <button type="submit">فحص</button>
+        </form>
+        {% if output %}<div style="margin-top:20px;"><pre>{{ output }}</pre></div>{% endif %}
+    </div>
+</body>
+</html>

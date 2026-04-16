@@ -1,6 +1,3 @@
 flask
-requests
-arabic-reshaper
-python-bidi
-colorama
 gunicorn
+requests

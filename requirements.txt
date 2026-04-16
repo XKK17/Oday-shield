@@ -1,5 +1,5 @@
 flask
 gunicorn
 requests
-arabic-reshaper
+arabic_reshaper
 python-bidi
